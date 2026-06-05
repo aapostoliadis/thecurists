@@ -1,7 +1,5 @@
 # The Curists Local Site
 
-This workspace contains a local site built from the `https://kaatdm.com/` structure, with the visible text and media replaced by The Curists content and assets from `http://127.0.0.1:5175/`.
-
 Run it with:
 
 ```bash
