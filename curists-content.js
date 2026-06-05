@@ -1060,7 +1060,12 @@
       button.setAttribute("title", "Back to top");
       button.setAttribute("aria-hidden", "true");
       button.tabIndex = -1;
-      button.innerHTML = '<span aria-hidden="true">↑</span>';
+      button.innerHTML = `
+        <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+          <path d="M12 19V5" />
+          <path d="m5 12 7-7 7 7" />
+        </svg>
+      `;
       document.body.append(button);
     }
 
@@ -1068,7 +1073,26 @@
       button.dataset.curistsReady = "true";
       button.addEventListener("click", () => {
         const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+        const startY = window.scrollY || document.documentElement.scrollTop || 0;
+        if (reduceMotion || startY <= 0) {
+          window.scrollTo(0, 0);
+          return;
+        }
+
+        const duration = Math.min(1100, Math.max(520, startY * 0.16));
+        const startTime = window.performance.now();
+        const step = (time) => {
+          const progress = Math.min(1, (time - startTime) / duration);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          window.scrollTo(0, Math.round(startY * (1 - eased)));
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+            return;
+          }
+          window.scrollTo(0, 0);
+        };
+
+        window.requestAnimationFrame(step);
       });
     }
 
