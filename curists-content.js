@@ -14,7 +14,7 @@
       alt: "A wedding couple kissing inside The Curists van",
       label: "Taste",
       text:
-        "Weddings, baptisms, corporate gatherings and private celebrations curated as emotional experiences - designed to be remembered not only for how they looked, but for how they felt.",
+        "Wedding and baptism moments curated with warmth, taste and intention - from welcome rituals and van styling to guest memories that feel personal to the couple, child and family.",
     },
     {
       number: "02",
@@ -25,7 +25,7 @@
       alt: "The Curists van styled for a seaside celebration",
       label: "People",
       text:
-        "Corporate gatherings curated as emotional experiences - designed to be remembered not only for how they looked, but for how they felt.",
+        "Corporate events shaped around connection, hospitality and brand feeling - from team rituals and client receptions to launch moments that feel human, useful and memorable.",
     },
     {
       number: "03",
@@ -36,7 +36,7 @@
       alt: "A wedding couple beside The Curists van",
       label: "Feeling",
       text:
-        "Private celebrations curated as emotional experiences - designed to be remembered not only for how they looked, but for how they felt.",
+        "Private celebrations for birthdays, anniversaries and family gatherings - designed around the host, the guests and the kind of memory everyone should carry home.",
     },
   ];
 
@@ -160,7 +160,7 @@
         },
         {
           title: "Best for",
-          text: "Civil weddings, destination weddings, baptisms, intimate ceremonies, family weekends and celebrations where the atmosphere matters as much as the schedule.",
+          text: "Civil weddings, destination weddings, baptisms, intimate ceremonies, wedding weekends and baptism receptions where the atmosphere matters as much as the schedule.",
         },
       ],
       related: [
