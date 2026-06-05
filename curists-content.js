@@ -1050,6 +1050,61 @@
     window.setTimeout(update, 700);
   };
 
+  const installBackToTopButton = () => {
+    let button = qs(".curists-back-to-top");
+    if (!button) {
+      button = document.createElement("button");
+      button.className = "curists-back-to-top";
+      button.type = "button";
+      button.setAttribute("aria-label", "Back to top");
+      button.setAttribute("title", "Back to top");
+      button.setAttribute("aria-hidden", "true");
+      button.tabIndex = -1;
+      button.innerHTML = '<span aria-hidden="true">↑</span>';
+      document.body.append(button);
+    }
+
+    if (!button.dataset.curistsReady) {
+      button.dataset.curistsReady = "true";
+      button.addEventListener("click", () => {
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+      });
+    }
+
+    const update = () => {
+      const doc = document.documentElement;
+      const scrollY = window.scrollY || doc.scrollTop || 0;
+      const viewportHeight = window.innerHeight || doc.clientHeight || 1;
+      const pageHeight = Math.max(doc.scrollHeight, document.body.scrollHeight);
+      const distanceFromBottom = pageHeight - (scrollY + viewportHeight);
+      const nearBottom = distanceFromBottom <= Math.max(180, viewportHeight * 0.22);
+      const visible = nearBottom && scrollY > 120;
+      button.classList.toggle("is-visible", visible);
+      button.tabIndex = visible ? 0 : -1;
+      button.setAttribute("aria-hidden", visible ? "false" : "true");
+    };
+
+    let ticking = false;
+    const requestUpdate = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        ticking = false;
+        update();
+      });
+    };
+
+    if (!button.dataset.curistsScrollReady) {
+      button.dataset.curistsScrollReady = "true";
+      window.addEventListener("scroll", requestUpdate, { passive: true });
+      window.addEventListener("resize", requestUpdate);
+    }
+
+    window.setTimeout(update, 0);
+    window.setTimeout(update, 450);
+  };
+
   const updateCards = () => {
     const cards = [...services, ...experiences];
     qsa(".c-story-selection .c-card").forEach((card, index) => {
@@ -1155,6 +1210,7 @@
       renderInternalPage(page);
       updateFooter();
       replaceLegacyMedia();
+      installBackToTopButton();
       return;
     }
     updateHero();
@@ -1168,6 +1224,7 @@
     updateStepsAndCta();
     updateFooter();
     replaceLegacyMedia();
+    installBackToTopButton();
   };
 
   const applyPreviewScroll = () => {
