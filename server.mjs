@@ -59,8 +59,8 @@ function removeThirdPartyRuntime(html) {
 
   return cleaned.replace(
     "</head>",
-    '<link rel="stylesheet" media="all" href="/themes/jakarta/dist/css/js-fallback.css" />\n<link rel="stylesheet" media="all" href="/local-mirror.css?v=header-green" />\n</head>',
-  ).replace("</body>", '<script src="/curists-content.js?v=header-green" defer></script>\n</body>');
+    '<link rel="stylesheet" media="all" href="/themes/jakarta/dist/css/js-fallback.css" />\n<link rel="stylesheet" media="all" href="/local-mirror.css?v=primary-teal" />\n</head>',
+  ).replace("</body>", '<script src="/curists-content.js?v=primary-teal" defer></script>\n</body>');
 }
 
 function localPath(pathname) {

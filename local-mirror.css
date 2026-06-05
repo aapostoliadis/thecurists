@@ -38,7 +38,7 @@ html.overlay-open .page-overlay {
 
 body.curists-content {
   --color-light: #f6f3e9;
-  --color-dark: #006659;
+  --color-dark: #52C7B4;
   --color-primary: #f6f3e9;
   --color-secondary: #52c7b4;
   --color-background: #f6f3e9;
@@ -277,7 +277,7 @@ body.curists-content .curists-feature-card--service::before {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: rgba(0, 102, 89, 0.08);
+  background: rgba(82, 199, 180, 0.08);
   transform: scaleY(0);
   transform-origin: bottom;
   transition: transform 0.52s cubic-bezier(0.16, 1, 0.3, 1);
@@ -296,8 +296,8 @@ body.curists-content .curists-feature-card--service img {
 body.curists-content .curists-feature-card--service:hover,
 body.curists-content .curists-feature-card--service:focus-within,
 body.curists-content .curists-feature-card--service.is-hovered {
-  border-color: rgba(0, 102, 89, 0.78);
-  box-shadow: 0 24px 44px -34px rgba(0, 102, 89, 0.74);
+  border-color: rgba(82, 199, 180, 0.78);
+  box-shadow: 0 24px 44px -34px rgba(82, 199, 180, 0.74);
   transform:
     perspective(900px)
     translateY(-0.65rem)
@@ -396,7 +396,7 @@ body.curists-content .curists-steps-list li {
   gap: 1rem;
   align-items: baseline;
   padding: 1.15rem 0;
-  border-top: 1px solid rgba(0, 102, 89, 0.28);
+  border-top: 1px solid rgba(82, 199, 180, 0.28);
 }
 
 body.curists-content .curists-steps-list strong {
@@ -425,7 +425,7 @@ body.curists-content.curists-internal .c-banner__media::after {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: rgba(0, 102, 89, 0.22);
+  background: rgba(82, 199, 180, 0.22);
 }
 
 body.curists-content .curists-internal-page {
@@ -502,7 +502,7 @@ body.curists-content .curists-page-panel {
   gap: clamp(1.5rem, 5vw, 5rem);
   align-items: center;
   padding: clamp(1.25rem, 3vw, 2.5rem) 0;
-  border-top: 1px solid rgba(0, 102, 89, 0.32);
+  border-top: 1px solid rgba(82, 199, 180, 0.32);
 }
 
 body.curists-content .curists-page-panel:nth-child(even) {
@@ -560,7 +560,7 @@ body.curists-content .curists-page-list {
 
 body.curists-content .curists-page-list li {
   padding-top: 0.8rem;
-  border-top: 1px solid rgba(0, 102, 89, 0.24);
+  border-top: 1px solid rgba(82, 199, 180, 0.24);
 }
 
 body.curists-content .curists-page-section {
@@ -568,7 +568,7 @@ body.curists-content .curists-page-section {
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
   gap: clamp(2rem, 7vw, 8rem);
   padding: clamp(3rem, 7vw, 7rem) 0;
-  border-top: 1px solid rgba(0, 102, 89, 0.32);
+  border-top: 1px solid rgba(82, 199, 180, 0.32);
 }
 
 body.curists-content .curists-page-panel-grid + .curists-page-section,
@@ -593,7 +593,7 @@ body.curists-content .curists-contact-form {
   gap: 1.25rem;
   margin-top: clamp(3rem, 6vw, 6rem);
   padding-top: clamp(2rem, 4vw, 4rem);
-  border-top: 1px solid rgba(0, 102, 89, 0.32);
+  border-top: 1px solid rgba(82, 199, 180, 0.32);
 }
 
 body.curists-content .curists-contact-form label {
@@ -614,7 +614,7 @@ body.curists-content .curists-contact-form input,
 body.curists-content .curists-contact-form select,
 body.curists-content .curists-contact-form textarea {
   width: 100%;
-  border: 1px solid rgba(0, 102, 89, 0.42);
+  border: 1px solid rgba(82, 199, 180, 0.42);
   border-radius: 8px;
   background: transparent;
   color: inherit;

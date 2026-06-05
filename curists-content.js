@@ -955,7 +955,7 @@
       replacePicture(qs(".pg-schedule-item__media picture", item), data.image || data.photo, data.alt);
     });
     qsa("#travelschedule svg path").forEach((path) => {
-      path.setAttribute("stroke", "#006659");
+      path.setAttribute("stroke", "#52C7B4");
     });
     qsa("#travelschedule .c-schedule__svg-placeholder").forEach((path) => {
       path.setAttribute("stroke-opacity", "0.22");
@@ -987,7 +987,7 @@
       line.removeAttribute("stroke-dashoffset");
       line.removeAttribute("stroke-opacity");
       line.removeAttribute("data-schedule-path");
-      line.setAttribute("stroke", "#006659");
+      line.setAttribute("stroke", "#52C7B4");
       line.setAttribute("stroke-width", "2.8");
       line.setAttribute("fill", "none");
       line.setAttribute("aria-hidden", "true");
