@@ -588,7 +588,8 @@
       logo.href = "/";
       logo.setAttribute("aria-label", "The Curists home");
       const isHeader = Boolean(logo.closest(".page-header"));
-      const logoSrc = isHeader ? asset("thecurists-logo-cornsilk.png") : asset("thecurists-logo.png");
+      const isHomepageHeader = isHeader && currentPath() === "/";
+      const logoSrc = isHeader && !isHomepageHeader ? asset("thecurists-logo-cornsilk.png") : asset("thecurists-logo.png");
       logo.innerHTML = `
         <img class="curists-logo-mark" src="${logoSrc}" alt="The Curists" />
       `;

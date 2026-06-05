@@ -74,6 +74,29 @@ body.curists-content .page-header .site-logo {
   text-shadow: 0 1px 18px rgba(0, 0, 0, 0.24);
 }
 
+body.curists-content:not(.curists-internal) .page-header .site-logo {
+  color: var(--color-dark);
+  text-shadow: none;
+}
+
+body.curists-content:not(.curists-internal) .page-header .site-logo img.curists-logo-mark {
+  filter: none;
+}
+
+body.curists-content:not(.curists-internal) .page-header__right {
+  --color-text: var(--color-dark);
+}
+
+body.curists-content:not(.curists-internal) .page-header .page-overlay__open,
+body.curists-content:not(.curists-internal) .page-header .c-menu__before,
+body.curists-content:not(.curists-internal) .page-header .c-menu__after {
+  color: var(--color-dark);
+}
+
+body.curists-content:not(.curists-internal) .page-header .c-hamburger__line {
+  background-color: var(--color-dark);
+}
+
 body.curists-content .page-footer .site-logo,
 body.curists-content .page-overlay .site-logo {
   color: var(--color-dark);
