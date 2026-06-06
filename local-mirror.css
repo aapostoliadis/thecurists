@@ -201,6 +201,41 @@ body.curists-content .page-overlay .site-logo {
   text-shadow: none;
 }
 
+body.curists-content .curists-footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.6rem;
+  padding-top: 1.4rem;
+}
+
+body.curists-content .curists-social-button {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  color: inherit;
+  padding: 0.78rem 1.05rem;
+  text-decoration: none;
+  transition:
+    background-color 0.22s ease,
+    color 0.22s ease,
+    transform 0.22s ease;
+}
+
+body.curists-content .curists-social-button:hover {
+  background: var(--color-dark);
+  color: var(--color-light);
+  transform: translateY(-0.12rem);
+}
+
+body.curists-content .curists-social-button:focus-visible {
+  outline: 2px solid var(--color-dark);
+  outline-offset: 4px;
+}
+
 body.curists-content.nav-color-yellow .page-header__middle img,
 body.curists-content.nav-color-yellow .page-overlay img {
   opacity: 1 !important;

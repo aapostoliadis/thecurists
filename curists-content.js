@@ -1195,10 +1195,18 @@
   };
 
   const updateFooter = () => {
-    setLink(qs(".menu--social-menu a"), "Follow The Curists on Instagram", "https://instagram.com");
+    const socialColumn = qs("#block-jakarta-socialmedia")?.closest(".page-footer-cols__el");
+    if (socialColumn) socialColumn.hidden = true;
     setHtml(
       qs("#block-jakarta-footerinfo .field__item"),
-      "<p><strong>The Curists.</strong><br>Curated experiences designed to be felt.<br>Weddings, baptisms, corporate events, private celebrations and wellbeing experiences.</p>",
+      `
+        <p><strong>The Curists.</strong><br>Curated experiences designed to be felt.<br>Weddings, baptisms, corporate events, private celebrations and wellbeing experiences.</p>
+        <div class="curists-footer-socials" aria-label="Follow The Curists">
+          <a class="curists-social-button" href="https://instagram.com" target="_blank" rel="noopener">Follow The Curists on Instagram</a>
+          <a class="curists-social-button" href="https://facebook.com" target="_blank" rel="noopener">Follow The Curists on Facebook</a>
+          <a class="curists-social-button" href="https://www.tiktok.com" target="_blank" rel="noopener">Follow The Curists on Tik Tok</a>
+        </div>
+      `,
     );
     setText(qs(".page-footer-centered__left > div:first-child"), "\u00a92026 The Curists");
     const footerLinks = qsa(".menu--footer a");
