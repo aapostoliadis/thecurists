@@ -163,14 +163,13 @@ body.curists-content .page-header .c-hamburger__line {
 }
 
 body.curists-content .page-header .site-logo {
-  padding: clamp(0.32rem, 0.7vw, 0.54rem);
-  border: 1px solid rgba(26, 26, 26, 0.12);
+  padding: 0;
+  border: 0;
   border-radius: 999px;
   background: rgba(246, 243, 233, 0.88) !important;
-  box-shadow:
-    0 16px 42px rgba(26, 26, 26, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: none;
   color: var(--color-dark);
+  overflow: hidden;
   text-shadow: none;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
