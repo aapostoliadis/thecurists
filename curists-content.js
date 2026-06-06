@@ -1250,19 +1250,29 @@
   };
 
   const updateFooter = () => {
-    const socialColumn = qs("#block-jakarta-socialmedia")?.closest(".page-footer-cols__el");
-    if (socialColumn) socialColumn.hidden = true;
-    setHtml(
-      qs("#block-jakarta-footerinfo .field__item"),
-      `
-        <p><strong>The Curists.</strong><br>Curated experiences designed to be felt.<br>Weddings, baptisms, corporate events, private celebrations and wellbeing experiences.</p>
-        <div class="curists-footer-socials" aria-label="Follow The Curists">
-          <a class="curists-social-button" href="https://instagram.com" target="_blank" rel="noopener">${socialIcon("instagram")}<span>Follow The Curists on Instagram</span></a>
-          <a class="curists-social-button" href="https://facebook.com" target="_blank" rel="noopener">${socialIcon("facebook")}<span>Follow The Curists on Facebook</span></a>
-          <a class="curists-social-button" href="https://www.tiktok.com" target="_blank" rel="noopener">${socialIcon("tiktok")}<span>Follow The Curists on Tik Tok</span></a>
-        </div>
-      `,
-    );
+    const footerTop = qs(".page-footer-cols__inner");
+    if (footerTop) {
+      footerTop.innerHTML = `
+        <section class="page-footer-cols__el curists-footer-unified" aria-label="The Curists footer">
+          <div class="curists-footer-logo">
+            <a class="site-logo" href="/" rel="home" aria-label="The Curists home">
+              <img class="curists-logo-mark" src="${asset("thecurists-logo.png")}" alt="The Curists" loading="lazy" decoding="async" />
+            </a>
+          </div>
+          <nav class="curists-footer-links" aria-label="Footer navigation">
+            ${pageNavLinks.map((link) => `<a href="${link.href}">${link.label}</a>`).join("")}
+          </nav>
+          <div class="curists-footer-summary">
+            <p><strong>The Curists.</strong><br>Curated experiences designed to be felt.<br>Weddings, baptisms, corporate events, private celebrations and wellbeing experiences.</p>
+            <div class="curists-footer-socials" aria-label="Follow The Curists">
+              <a class="curists-social-button" href="https://instagram.com" target="_blank" rel="noopener">${socialIcon("instagram")}<span>Follow The Curists on Instagram</span></a>
+              <a class="curists-social-button" href="https://facebook.com" target="_blank" rel="noopener">${socialIcon("facebook")}<span>Follow The Curists on Facebook</span></a>
+              <a class="curists-social-button" href="https://www.tiktok.com" target="_blank" rel="noopener">${socialIcon("tiktok")}<span>Follow The Curists on Tik Tok</span></a>
+            </div>
+          </div>
+        </section>
+      `;
+    }
     setText(qs(".page-footer-centered__left > div:first-child"), "\u00a92026 The Curists");
     const footerLinks = qsa(".menu--footer a");
     setLink(footerLinks[0], "Privacy Policy", "/privacy-policy");
