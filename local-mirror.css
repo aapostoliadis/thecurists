@@ -223,9 +223,22 @@ body.curists-content .page-footer-cols .curists-footer-unified {
   align-items: start;
 }
 
+body.curists-content .curists-footer-logo,
+body.curists-content .curists-footer-links,
+body.curists-content .curists-footer-summary {
+  width: 100%;
+  min-width: 0;
+  align-self: stretch;
+  justify-self: stretch;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body.curists-content .curists-footer-logo .site-logo {
   position: static;
   top: auto;
+  width: 100%;
   justify-content: flex-start;
 }
 
@@ -258,11 +271,12 @@ body.curists-content .curists-footer-links a:hover {
 }
 
 body.curists-content .curists-footer-summary {
-  max-width: 58rem;
+  max-width: none;
 }
 
 body.curists-content .curists-footer-summary p {
-  max-width: 58ch;
+  width: 100%;
+  max-width: none;
   margin: 0;
 }
 
