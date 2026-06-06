@@ -163,19 +163,34 @@ body.curists-content .page-header .c-hamburger__line {
 }
 
 body.curists-content .page-header .site-logo {
+  position: relative;
   padding: 0;
   border: 0;
-  border-radius: 999px;
-  background: rgba(246, 243, 233, 0.88) !important;
+  border-radius: 0;
+  background: transparent !important;
   box-shadow: none;
   color: var(--color-dark);
-  overflow: hidden;
+  overflow: visible;
   text-shadow: none;
+}
+
+body.curists-content .page-header .site-logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 88.05%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgba(246, 243, 233, 0.88);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 }
 
 body.curists-content .page-header .site-logo img.curists-logo-mark {
+  position: relative;
+  z-index: 1;
   width: clamp(62.5px, 6.25vw, 97.5px);
   filter: none;
 }
