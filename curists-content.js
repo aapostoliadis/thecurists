@@ -1228,6 +1228,27 @@
     setLink(qs(".c-cta__button a"), "Start your journey", "/contact");
   };
 
+  const socialIcon = (name) => {
+    const icons = {
+      instagram: `
+        <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4A5.8 5.8 0 0 1 16.2 22H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4A3.8 3.8 0 0 0 20 16.2V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Zm5.15-2.05a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z" />
+        </svg>
+      `,
+      facebook: `
+        <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+          <path d="M14 8h3V4h-3c-3.25 0-5 1.9-5 5v2H6v4h3v7h4v-7h3.25l0.75-4h-4V9.25C13 8.4 13.35 8 14 8Z" />
+        </svg>
+      `,
+      tiktok: `
+        <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+          <path d="M14.55 3c0.38 2.95 2.17 4.85 5.45 5.05v3.22a8.04 8.04 0 0 1-5.16-1.78v6.11A6.4 6.4 0 1 1 8.44 9.2c0.38 0 0.76 0.03 1.12 0.1v3.38a3.07 3.07 0 1 0 2.02 2.88V3h2.97Z" />
+        </svg>
+      `,
+    };
+    return `<span class="curists-social-icon">${icons[name] || ""}</span>`;
+  };
+
   const updateFooter = () => {
     const socialColumn = qs("#block-jakarta-socialmedia")?.closest(".page-footer-cols__el");
     if (socialColumn) socialColumn.hidden = true;
@@ -1236,9 +1257,9 @@
       `
         <p><strong>The Curists.</strong><br>Curated experiences designed to be felt.<br>Weddings, baptisms, corporate events, private celebrations and wellbeing experiences.</p>
         <div class="curists-footer-socials" aria-label="Follow The Curists">
-          <a class="curists-social-button" href="https://instagram.com" target="_blank" rel="noopener">Follow The Curists on Instagram</a>
-          <a class="curists-social-button" href="https://facebook.com" target="_blank" rel="noopener">Follow The Curists on Facebook</a>
-          <a class="curists-social-button" href="https://www.tiktok.com" target="_blank" rel="noopener">Follow The Curists on Tik Tok</a>
+          <a class="curists-social-button" href="https://instagram.com" target="_blank" rel="noopener">${socialIcon("instagram")}<span>Follow The Curists on Instagram</span></a>
+          <a class="curists-social-button" href="https://facebook.com" target="_blank" rel="noopener">${socialIcon("facebook")}<span>Follow The Curists on Facebook</span></a>
+          <a class="curists-social-button" href="https://www.tiktok.com" target="_blank" rel="noopener">${socialIcon("tiktok")}<span>Follow The Curists on Tik Tok</span></a>
         </div>
       `,
     );
