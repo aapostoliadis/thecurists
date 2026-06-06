@@ -224,6 +224,8 @@ body.curists-content .page-footer-cols .curists-footer-unified {
 }
 
 body.curists-content .curists-footer-logo .site-logo {
+  position: static;
+  top: auto;
   justify-content: flex-start;
 }
 
