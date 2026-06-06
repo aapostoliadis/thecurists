@@ -1264,11 +1264,11 @@
           </nav>
           <div class="curists-footer-summary">
             <p><strong>The Curists.</strong><br>Curated experiences designed to be felt.<br>Weddings, baptisms, corporate events, private celebrations and wellbeing experiences.</p>
-            <div class="curists-footer-socials" aria-label="Follow The Curists">
-              <a class="curists-social-button" href="https://instagram.com" target="_blank" rel="noopener">${socialIcon("instagram")}<span>Follow The Curists on Instagram</span></a>
-              <a class="curists-social-button" href="https://facebook.com" target="_blank" rel="noopener">${socialIcon("facebook")}<span>Follow The Curists on Facebook</span></a>
-              <a class="curists-social-button" href="https://www.tiktok.com" target="_blank" rel="noopener">${socialIcon("tiktok")}<span>Follow The Curists on Tik Tok</span></a>
-            </div>
+          </div>
+          <div class="curists-footer-socials" aria-label="Follow The Curists">
+            <a class="curists-social-button" href="https://instagram.com" target="_blank" rel="noopener">${socialIcon("instagram")}<span>Follow The Curists on Instagram</span></a>
+            <a class="curists-social-button" href="https://facebook.com" target="_blank" rel="noopener">${socialIcon("facebook")}<span>Follow The Curists on Facebook</span></a>
+            <a class="curists-social-button" href="https://www.tiktok.com" target="_blank" rel="noopener">${socialIcon("tiktok")}<span>Follow The Curists on Tik Tok</span></a>
           </div>
         </section>
       `;

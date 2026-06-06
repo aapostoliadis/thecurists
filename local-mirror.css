@@ -209,12 +209,17 @@ body.curists-content .page-footer-cols__inner {
   padding-right: 0 !important;
 }
 
+body.curists-content .page-footer-cols {
+  padding: clamp(3rem, 4.4vw, 4.8rem) 0 clamp(2.7rem, 4vw, 4.4rem);
+}
+
 body.curists-content .page-footer-cols .curists-footer-unified {
   display: grid;
   width: min(88vw, 1480px) !important;
   margin: 0 auto !important;
   grid-template-columns: minmax(96px, 0.48fr) minmax(220px, 0.82fr) minmax(360px, 1.35fr);
-  gap: clamp(2rem, 5vw, 5.5rem);
+  column-gap: clamp(2rem, 5vw, 5.5rem);
+  row-gap: clamp(1.6rem, 3vw, 3rem);
   align-items: start;
 }
 
@@ -260,11 +265,14 @@ body.curists-content .curists-footer-summary p {
 }
 
 body.curists-content .curists-footer-socials {
+  grid-column: 1 / -1;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.75rem;
-  margin-top: 1.6rem;
-  padding-top: 1.4rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 body.curists-content .curists-social-button {
@@ -1040,6 +1048,10 @@ body.curists-content #travelschedule.curists-scroll-line .curists-drawn-line {
 
   body.curists-content .curists-footer-links a {
     white-space: normal;
+  }
+
+  body.curists-content .curists-footer-socials {
+    flex-wrap: wrap;
   }
 
   body.curists-content .curists-social-button {
