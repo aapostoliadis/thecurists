@@ -1047,6 +1047,40 @@
     window.setTimeout(update, 700);
   };
 
+  const installHeaderLogoVisibility = () => {
+    const logo = qs(".page-header .site-logo");
+    if (!logo) return;
+
+    const update = () => {
+      const doc = document.documentElement;
+      const scrollY = window.scrollY || doc.scrollTop || 0;
+      const viewportHeight = window.innerHeight || doc.clientHeight || 1;
+      const nearTop = scrollY <= viewportHeight * 0.88;
+      document.body.classList.toggle("curists-header-logo-hidden", !nearTop);
+      logo.tabIndex = nearTop ? 0 : -1;
+      logo.setAttribute("aria-hidden", nearTop ? "false" : "true");
+    };
+
+    let ticking = false;
+    const requestUpdate = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        ticking = false;
+        update();
+      });
+    };
+
+    if (!document.body.dataset.curistsLogoVisibilityReady) {
+      document.body.dataset.curistsLogoVisibilityReady = "true";
+      window.addEventListener("scroll", requestUpdate, { passive: true });
+      window.addEventListener("resize", requestUpdate);
+    }
+
+    window.setTimeout(update, 0);
+    window.setTimeout(update, 450);
+  };
+
   const installBackToTopButton = () => {
     let button = qs(".curists-back-to-top");
     if (!button) {
@@ -1239,6 +1273,7 @@
       renderInternalPage(page);
       updateFooter();
       replaceLegacyMedia();
+      installHeaderLogoVisibility();
       installBackToTopButton();
       return;
     }
@@ -1253,6 +1288,7 @@
     updateStepsAndCta();
     updateFooter();
     replaceLegacyMedia();
+    installHeaderLogoVisibility();
     installBackToTopButton();
   };
 
