@@ -177,7 +177,7 @@ body.curists-content .page-header .site-logo {
 }
 
 body.curists-content .page-header .site-logo img.curists-logo-mark {
-  width: clamp(50px, 5vw, 78px);
+  width: clamp(62.5px, 6.25vw, 97.5px);
   filter: none;
 }
 
@@ -258,7 +258,7 @@ body.curists-content .curists-journey-grid {
 
 body.curists-content .curists-kicker {
   margin: 0 0 1.25rem;
-  font-size: 0.82rem;
+  font-size: 1.025rem;
   font-weight: 500;
   letter-spacing: 0;
   text-transform: uppercase;
