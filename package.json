@@ -5,6 +5,11 @@
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
-    "mirror": "node tools/mirror-kaatdm.mjs"
+    "mirror": "node tools/mirror-kaatdm.mjs",
+    "test": "playwright test",
+    "test:responsive": "playwright test tests/responsive.spec.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
   }
 }

@@ -1,0 +1,10 @@
+node_modules/
+*.log
+*.zip
+
+.codex-remote-attachments/
+.obsidian/
+.playwright-cli/
+graphify-out/
+output/
+test-results/

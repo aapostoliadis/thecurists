@@ -103,7 +103,7 @@ function removeThirdPartyRuntime(html) {
 
   return cleaned.replace(
     "</head>",
-    '<link rel="stylesheet" media="all" href="/themes/jakarta/dist/css/js-fallback.css" />\n<link rel="stylesheet" media="all" href="/local-mirror.css" />\n</head>',
+    '<link rel="stylesheet" media="all" href="/assets/dist/css/js-fallback.css" />\n<link rel="stylesheet" media="all" href="/local-mirror.css" />\n</head>',
   ).replace("</body>", '<script src="/curists-content.js" defer></script>\n</body>');
 }
 

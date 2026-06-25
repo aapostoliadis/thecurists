@@ -59,8 +59,8 @@ function removeThirdPartyRuntime(html) {
 
   return cleaned.replace(
     "</head>",
-    '<link rel="stylesheet" media="all" href="/themes/jakarta/dist/css/js-fallback.css" />\n<link rel="stylesheet" media="all" href="/local-mirror.css?v=footer-inner-margin" />\n</head>',
-  ).replace("</body>", '<script src="/curists-content.js?v=footer-inner-margin" defer></script>\n</body>');
+    '<link rel="stylesheet" media="all" href="/assets/dist/css/js-fallback.css" />\n<link rel="stylesheet" media="all" href="/local-mirror.css?v=instant-cache-20260621-4" />\n</head>',
+  ).replace("</body>", '<script src="/curists-content.js?v=instant-cache-20260621-4" defer></script>\n</body>');
 }
 
 function localPath(pathname) {
@@ -126,7 +126,7 @@ async function proxyFromOrigin(requestUrl, pathname) {
     body: servedBody,
     headers: {
       "content-type": contentType,
-      "cache-control": response.ok ? "public, max-age=3600" : "no-store",
+      "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
     },
     status: response.status,
   };
