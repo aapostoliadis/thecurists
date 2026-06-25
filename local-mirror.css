@@ -2722,7 +2722,7 @@ body.curists-content #travelschedule.curists-scroll-line .curists-schedule-van i
 
   body.curists-content:not(.curists-internal) .c-banner__title {
     position: absolute;
-    top: clamp(6.5rem, 15vh, 7.25rem);
+    top: clamp(7.25rem, 17vh, 8.85rem);
     left: 50%;
     width: min(86vw, 22rem);
     padding: 0;
@@ -2731,20 +2731,24 @@ body.curists-content #travelschedule.curists-scroll-line .curists-schedule-van i
   }
 
   body.curists-content:not(.curists-internal) .c-banner__title__inner {
+    position: relative;
+    isolation: isolate;
     width: 100%;
     gap: 0.52rem;
     justify-items: center;
     margin-top: 0;
-    padding: 0.95rem 1rem 1.05rem;
-    border: 1px solid rgba(255, 255, 255, 0.68);
-    border-radius: 8px;
-    background: rgba(251, 244, 217, 0.86);
-    box-shadow:
-      0 0.9rem 2.4rem rgba(0, 0, 0, 0.24),
-      inset 0 1px 1px rgba(255, 255, 255, 0.72);
+    padding: 0.35rem 0.65rem 0.55rem;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
     text-align: center;
-    -webkit-backdrop-filter: blur(10px) saturate(1.08);
-    backdrop-filter: blur(10px) saturate(1.08);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  body.curists-content:not(.curists-internal) .c-banner__title__inner::before {
+    content: none;
+    display: none;
   }
 
   body.curists-content:not(.curists-internal) .c-banner__title h2 p {
@@ -2754,9 +2758,12 @@ body.curists-content #travelschedule.curists-scroll-line .curists-schedule-van i
     font-weight: 400;
     line-height: 0.98;
     text-align: center;
+    -webkit-text-stroke: 0.025rem rgba(251, 244, 217, 0.92);
+    paint-order: stroke fill;
     text-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.78),
-      0 0.12rem 0.34rem rgba(0, 0, 0, 0.14);
+      0 1px 0 rgba(255, 255, 255, 0.88),
+      0 0 0.76rem rgba(251, 244, 217, 0.98),
+      0 0.2rem 0.52rem rgba(0, 0, 0, 0.4);
   }
 
   body.curists-content:not(.curists-internal) .curists-hero-copy {
@@ -2767,8 +2774,12 @@ body.curists-content #travelschedule.curists-scroll-line .curists-schedule-van i
     font-weight: 500;
     line-height: 1.4;
     text-align: center;
+    -webkit-text-stroke: 0.012rem rgba(251, 244, 217, 0.86);
+    paint-order: stroke fill;
     text-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.7);
+      0 1px 0 rgba(255, 255, 255, 0.84),
+      0 0 0.64rem rgba(251, 244, 217, 0.94),
+      0 0.12rem 0.32rem rgba(0, 0, 0, 0.38);
   }
 
   body.curists-content:not(.curists-internal) .curists-hero-cta {
@@ -2776,7 +2787,7 @@ body.curists-content #travelschedule.curists-scroll-line .curists-schedule-van i
     margin-top: 0.45rem;
     margin-right: auto;
     margin-left: auto;
-    background: rgba(251, 244, 217, 0.95);
+    background: rgba(251, 244, 217, 0.86);
     color: #203A42;
     font-size: 1rem;
     font-weight: 400;
