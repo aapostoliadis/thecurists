@@ -999,8 +999,12 @@
 
     const syncMenuButton = () => {
       const button = qs(".page-header .page-overlay__open");
-      if (!button) return;
+      const overlay = qs(".page-overlay");
       const isOpen = document.documentElement.classList.contains("overlay-open");
+      if (overlay) {
+        overlay.setAttribute("aria-hidden", String(!isOpen));
+      }
+      if (!button) return;
       const label = isOpen ? "Close" : "Menu";
       button.setAttribute("aria-expanded", String(isOpen));
       button.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");

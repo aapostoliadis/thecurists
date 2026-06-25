@@ -13,11 +13,16 @@ const MAIN_ROUTES = [
 ];
 
 const VIEWPORTS = [
-  { name: "mobile-320", width: 320, height: 568 },
-  { name: "mobile-390", width: 390, height: 844 },
-  { name: "tablet-768", width: 768, height: 1024 },
-  { name: "laptop-1024", width: 1024, height: 768 },
-  { name: "desktop-1440", width: 1440, height: 900 },
+  { name: "mobile-320x568", width: 320, height: 568 },
+  { name: "mobile-360x800", width: 360, height: 800 },
+  { name: "mobile-375x812", width: 375, height: 812 },
+  { name: "mobile-390x844", width: 390, height: 844 },
+  { name: "mobile-430x932", width: 430, height: 932 },
+  { name: "tablet-768x1024", width: 768, height: 1024 },
+  { name: "tablet-landscape-1024x768", width: 1024, height: 768 },
+  { name: "desktop-1280x800", width: 1280, height: 800 },
+  { name: "desktop-1440x900", width: 1440, height: 900 },
+  { name: "desktop-1920x1080", width: 1920, height: 1080 },
 ];
 
 const CONTROL_SELECTOR = [

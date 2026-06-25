@@ -127,6 +127,7 @@ body.curists-content .page-header {
   right: clamp(0.75rem, 2vw, 1.5rem);
   left: clamp(0.75rem, 2vw, 1.5rem);
   z-index: 120;
+  width: auto;
   height: clamp(4.65rem, 7.2vw, 6.35rem);
   min-height: 0;
   border: 0;
