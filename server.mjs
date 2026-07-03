@@ -9,6 +9,7 @@ const ROOT = dirname(fileURLToPath(import.meta.url));
 const PORT = Number.parseInt(process.env.PORT ?? "4173", 10);
 const INTERNAL_ROUTES = new Set([
   "/services",
+  "/photoshootsandvideoclips",
   "/weddingsandbaptisms",
   "/corporateevents",
   "/privatecelebrations",

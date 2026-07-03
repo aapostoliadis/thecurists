@@ -42,6 +42,20 @@
     weddingPresentationChef: photo("wedding-presentation-chef.jpg"),
     privateCelebrationsHero: photo("thecurists-private-celebrations.jpg"),
     servicesHero: photo("thecurists-services.jpg"),
+    baptismBlueVan: photo("thecurists-baptism-blue-van.jpg"),
+    baptismMiniChapel: photo("thecurists-baptism-mini-chapel.jpg"),
+    baptismMiniFront: photo("thecurists-baptism-mini-front.jpg"),
+    baptismMintVan: photo("thecurists-baptism-mint-van.jpg"),
+    justMarriedVan: photo("thecurists-just-married.jpg"),
+    libraryOnWheels: photo("thecurists-library-on-wheels.jpg"),
+    onTheBeach: photo("thecurists-on-the-beach.jpg"),
+    plateau: photo("thecurists-plateau.jpg"),
+    privateCelebrationLake: photo("thecurists-private-celebrations-lake.jpg"),
+    privateCelebrationNight: photo("thecurists-private-celebration-night.jpeg"),
+    tequilaBar: photo("thecurists-tequila-bar.jpg"),
+    videoClip: photo("thecurists-videoclip.png"),
+    wellnessBeach: photo("thecurists-wellness-beach.jpg"),
+    wineBar: photo("thecurists-wine-bar.jpg"),
     weddingRunSign: photo("wedding-run-sign.jpg"),
     weddingSettingBeachSign: photo("wedding-setting-beach-sign.jpg"),
     weddingSettingTrain: photo("wedding-setting-train.jpg"),
@@ -62,39 +76,39 @@
   const services = [
     {
       number: "01",
-      title: "Weddings & Baptisms",
-      href: "/weddingsandbaptisms",
-      image: photos.weddingHandsBouquet,
-      photo: photos.baptismFamilyScooter,
-      alt: "A wedding couple holding hands beside a pink and lavender bouquet",
-      photoAlt: "A baptism family gathered around a decorated blue scooter",
-      label: "Taste",
+      title: "Photo Shoots & Video Clips",
+      href: "/photoshootsandvideoclips",
+      image: photos.videoClip,
+      photo: photos.videoClip,
+      alt: "The Curists mint Volkswagen T2 overlooking a rugged coastline at sunset",
+      photoAlt: "The Curists mint Volkswagen T2 overlooking a rugged coastline at sunset",
+      label: "Production",
       text:
-        "Weddings and baptisms curated as emotional experiences - from welcome drinks and van styling to photobooth moments, guest flow and the small gestures people carry home.",
+        "Rent a classic vehicle as the subject or backdrop for a photo shoot, video clip, campaign or social production. Professional drivers are available on request.",
     },
     {
       number: "02",
-      title: "Corporate Events",
-      href: "/corporateevents",
-      image: photos.corporateBrandActivation,
-      photo: photos.corporateBrandActivationClose,
-      alt: "The Curists van styled for a corporate client reception on a city terrace",
-      photoAlt: "The Curists van configured as a branded Aperol Spritz tasting station",
-      label: "People",
+      title: "Weddings & Baptisms",
+      href: "/weddingsandbaptisms",
+      image: photos.baptismMiniChapel,
+      photo: photos.baptismBlueVan,
+      alt: "A burgundy classic Mini prepared as a baptism photo backdrop by a seaside chapel",
+      photoAlt: "The mint Curists van decorated for a baptism portrait by the sea",
+      label: "Arrival",
       text:
-        "Corporate gatherings shaped around connection, hospitality and clear brand purpose - team experiences, client receptions, launch moments, content and media designed to feel human.",
+        "Hire a classic car or van for your arrival, portraits or transport. We supply the vehicle and optional driver; your planner and suppliers organize the wedding or baptism.",
     },
     {
       number: "03",
-      title: "Private Celebrations",
-      href: "/privatecelebrations",
-      image: photos.weddingFoodCharcuterie,
-      photo: photos.weddingTableSeasideDusk,
-      alt: "A private celebration table set beside the sea at sunset",
-      photoAlt: "A beachside dinner table set with glassware and white linens",
-      label: "Feeling",
+      title: "Mobile Van Experiences",
+      href: "/experiences#van",
+      image: photos.wineBar,
+      photo: photos.privateCelebrationLake,
+      alt: "The Curists van configured as a wine bar in a vineyard at sunset",
+      photoAlt: "The Curists van used as a grazing station beside a mountain lake",
+      label: "Experience",
       text:
-        "Private celebrations for birthdays, anniversaries and family gatherings - built around shared tables, sensory details, playful services and the feeling guests should remember.",
+        "Turn the VW T2 into a distinctive mobile bar, tasting point, library, wellness station or branded set, configured around your location and creative brief.",
     },
   ];
 
@@ -103,30 +117,30 @@
       number: "01",
       title: "The Curist Van",
       href: "/experiences#van",
-      image: asset("photos/curist-van-aperol-sunset.jpg"),
-      alt: "The Curists van transformed into an Aperol Spritz bar at sunset",
+      image: photos.libraryOnWheels,
+      alt: "The Curists van transformed into a warmly lit mobile library",
       label: "Van",
       text:
-        "Not a van. A curated experience in motion. The reimagined Volkswagen Type 2 can become a mobile bar, photobooth, welcome point or space for movement and connection.",
+        "The reimagined Volkswagen Type 2 can become a mobile bar, photo backdrop, welcome point, library or visual anchor for your own experience.",
     },
     {
       number: "02",
       title: "Wellbeing Experiences",
       href: "/experiences#wellbeing",
-      image: photos.wellbeingExperiences,
-      alt: "The Curists van serving wellbeing tonics during a beachside sunset session",
+      image: photos.wellnessBeach,
+      alt: "The Curists van used as a juice bar beside a beach yoga session",
       label: "Wellbeing",
       text:
-        "Custom wellbeing experiences that reconnect body, mind and self. Yoga, movement, picnics, wine tastings, cooking and team rituals blend simple pleasure with deeper awareness.",
+        "Use the van as a juice bar, welcome point or calm backdrop for a wellness session organized and delivered by your own instructors and team.",
     },
     {
       number: "03",
       title: "Let's create something you'll feel.",
       href: "/contact",
-      image: photos.akisAnnaDance,
-      alt: "A wedding couple dancing under warm evening lights",
+      image: photos.privateCelebrationLake,
+      alt: "The Curists van used as a grazing station beside a mountain lake",
       label: "Feel",
-      text: "Experiences you don't just attend - but carry with you.",
+      text: "Bring us the location and creative brief. We will bring the classic vehicle that completes the scene.",
     },
   ];
 
@@ -134,46 +148,47 @@
     {
       number: "01",
       value: "feeling",
-      title: "Name the feeling",
-      text: "You tell us how you want people to feel.",
-      note: "Everything begins with the emotional brief: calm, playful, generous, cinematic, intimate or unexpected.",
-      image: photos.weddingStartYourJourney,
-      alt: "A boarding pass style invitation card on textured fabric",
-      label: "Brief",
+      title: "Share the brief",
+      text: "Tell us the date, location and role the vehicle will play.",
+      note: "Start with the practical details: photo shoot, video clip, ceremony transport, brand activation or mobile experience.",
+      image: photos.onTheBeach,
+      alt: "The Curists mint Volkswagen van on a quiet beach at sunset",
+      label: "Your brief",
     },
     {
       number: "02",
       value: "shape",
-      title: "Shape the flow",
-      text: "We shape the concept, service list and guest rhythm.",
-      note: "We turn the feeling into a clear route: arrival, service, timing, partners, taste and the small gestures between.",
-      image: photos.weddingTableBeach,
-      alt: "A beachside dinner table set with glassware and white linens",
-      label: "Flow",
+      title: "Choose your vehicle",
+      text: "Select the classic car or van that fits the scene.",
+      note: "We help you match the vehicle to the visual direction, access requirements and practical needs of the location.",
+      image: photos.baptismMiniFront,
+      alt: "A burgundy classic Mini decorated for a baptism",
+      label: "Vehicle",
     },
     {
       number: "03",
       value: "details",
-      title: "Layer the details",
-      text: "The van, partners and sensory details support the feeling.",
-      note: "The visible pieces earn their place: the van, drinks, music, flowers, food, rituals and details all serve the same mood.",
-      image: photos.curistVanAperolSunset,
-      alt: "The Curists van transformed into an Aperol Spritz bar at sunset",
-      label: "Details",
+      title: "Set the logistics",
+      text: "Confirm timing, access, delivery and driver requirements.",
+      note: "Professional drivers are available on request. We agree the vehicle hours, handover, route and on-location access before the booking is confirmed.",
+      image: photos.justMarriedVan,
+      alt: "The Curists van staged as a cinematic bar above the sea at sunset",
+      label: "Logistics",
     },
     {
       number: "04",
       value: "memory",
-      title: "Leave a memory",
-      text: "The experience becomes something people carry home.",
-      note: "When the day is over, the work is measured by what people still remember, repeat and feel.",
-      image: photos.akisAnnaDance,
-      alt: "A wedding couple dancing under warm evening lights",
-      label: "Memory",
+      title: "Create the scene",
+      text: "Your crew, planner or suppliers bring the wider production to life.",
+      note: "We arrive with the agreed vehicle, ready to take its place in the frame. Event planning and ceremony coordination remain with your chosen professionals.",
+      image: photos.libraryOnWheels,
+      alt: "The Curists van transformed into a warmly lit mobile library",
+      label: "On location",
     },
   ];
 
   const contactOccasions = [
+    "Photo shoot or video clip",
     "Wedding or baptism",
     "Corporate event",
     "Private celebration",
@@ -183,12 +198,13 @@
 
   const pageNavLinks = [
     { label: "Services", href: "/services" },
+    { label: "Photo Shoots & Video Clips", href: "/photoshootsandvideoclips" },
     { label: "Experiences", href: "/experiences" },
     { label: "Weddings & Baptisms", href: "/weddingsandbaptisms" },
     { label: "Corporate Events", href: "/corporateevents" },
     { label: "Private Celebrations", href: "/privatecelebrations" },
     { label: "About", href: "/about" },
-    { label: "Start your Experience", href: "/contact" },
+    { label: "Request a Vehicle", href: "/contact" },
   ];
 
   const footerPolicyLinks = [
@@ -204,12 +220,12 @@
   const internalPages = {
     "/services": {
       title: "Services",
-      kicker: "Our services",
-      description: "Curated event services and emotional experiences from The Curists.",
-      heroImage: photos.servicesHero,
-      heroAlt: "Guests gathering beside The Curists van during a curated outdoor service",
+      kicker: "Classic vehicle hire",
+      description: "Classic car and VW van hire for photo shoots, video clips, weddings, baptisms and mobile experiences.",
+      heroImage: photos.onTheBeach,
+      heroAlt: "The Curists mint Volkswagen van on a quiet beach at sunset",
       lede:
-        "Emotion first. Clarity next. We curate experiences supported by complete event services, so people understand what we do and remember how it felt.",
+        "A classic vehicle can be the subject, the backdrop or the arrival people remember. We provide the car or van, with a professional driver available on request.",
       panels: services.map((item) => ({
         eyebrow: item.number,
         title: item.title,
@@ -221,143 +237,232 @@
       })),
       sections: [
         {
-          title: "Curated experiences, complete event services",
+          title: "Put a classic vehicle in the frame",
           text:
-            "The experience is emotional, but the offer is clear. We shape the concept, then support it with practical services and carefully selected premium partners.",
+            "Choose the vehicle, tell us where it needs to be and how you plan to use it. We will help with vehicle suitability and logistics; your production crew, planner and suppliers remain in charge of the wider project or event.",
           items: [
-            "Weddings, baptisms, corporate events and private celebrations",
-            "Mobile bar experience",
-            "Photobooth experience",
-            "Vintage van setup",
-            "Interactive guest experiences",
-            "Event videography and social media content",
-            "Thematic setups and custom experience design",
-            "Team building experiences",
+            "Photo shoots, editorial productions and campaigns",
+            "Music videos, commercials and social content",
+            "Wedding and baptism arrivals or portraits",
+            "Classic car or VW T2 hire",
+            "Professional driver on request",
+            "Mobile bar, tasting and branded vehicle setups",
           ],
           variant: "interactive-services",
           options: [
             {
               number: "01",
-              value: "ceremonies",
-              label: "Wedding & baptism",
-              text: "Ceremony days shaped with welcome drinks, guest flow, styling details and small gestures people carry home.",
-              caption: "Ritual, taste and guest rhythm.",
-              image: photos.weddingHandsBouquet,
-              alt: "A wedding couple holding hands beside a pink and lavender bouquet",
+              value: "photo-video",
+              label: "Photo & video",
+              text: "Rent a classic vehicle as a hero subject or striking backdrop for a photo shoot, video clip, campaign or social production.",
+              caption: "Your subject. Your backdrop. Your story.",
+              image: photos.videoClip,
+              alt: "The Curists mint Volkswagen T2 overlooking a rugged coastline at sunset",
             },
             {
               number: "02",
-              value: "mobile-bar",
-              label: "Mobile bar",
-              text: "A service moment built around the van, the drinks, the timing and the mood of the gathering.",
-              caption: "A bar that becomes part of the scene.",
-              image: photos.servicesHero,
-              alt: "The Curists van serving guests during an outdoor event",
+              value: "classic-car-hire",
+              label: "Classic car hire",
+              text: "Book a classic car or VW T2 for a fixed period, with delivery or collection arranged around the location and access.",
+              caption: "A distinctive vehicle, ready for the frame.",
+              image: photos.justMarriedVan,
+              alt: "The Curists van staged as a cinematic bar above the sea at sunset",
             },
             {
               number: "03",
-              value: "photobooth",
-              label: "Photobooth",
-              text: "A playful guest pause with styling, props and a memory point that feels integrated into the day.",
-              caption: "Guest interaction with a keepsake.",
-              image: photos.weddingPhotoboothChild,
-              alt: "A child posing beside a wedding photobooth setup",
+              value: "ceremonies",
+              label: "Weddings & baptisms",
+              text: "Use one of our vehicles for the arrival, transport or portraits. We provide the vehicle; we do not organize the wedding or baptism.",
+              caption: "Vehicle hire for a day planned by your team.",
+              image: photos.baptismMiniChapel,
+              alt: "A burgundy classic Mini prepared as a baptism photo backdrop by a seaside chapel",
             },
             {
               number: "04",
-              value: "vintage-van",
-              label: "Vintage van",
-              text: "The VW T2 becomes a visual anchor: bar, welcome point, photo moment or curated service station.",
-              caption: "The van as a service stage.",
-              image: photos.curistVanAperolSunset,
-              alt: "The Curists van transformed into an Aperol Spritz bar at sunset",
+              value: "drivers",
+              label: "Professional drivers",
+              text: "Add an experienced professional driver when the vehicle needs to arrive, move between locations or remain managed during the booking.",
+              caption: "Available on request and confirmed in advance.",
+              image: photos.baptismMiniFront,
+              alt: "A burgundy classic Mini decorated for a baptism",
             },
             {
               number: "05",
-              value: "guest-experiences",
-              label: "Guest rituals",
-              text: "Interactive moments are designed to help people connect, participate and feel present inside the event.",
-              caption: "Tiny rituals, warmer rooms.",
-              image: photos.akisAnnaDance,
-              alt: "A wedding couple dancing under warm evening lights",
+              value: "mobile-bar",
+              label: "Mobile bar",
+              text: "Configure the VW T2 as a memorable bar or tasting point for a production, brand activation or privately organized gathering.",
+              caption: "A service station that belongs in the scene.",
+              image: photos.wineBar,
+              alt: "The Curists van configured as a wine bar in a vineyard at sunset",
             },
             {
               number: "06",
-              value: "content",
-              label: "Content capture",
-              text: "Photo, video and social content support the memory without turning the day into a production.",
-              caption: "Content with atmosphere, not interruption.",
-              image: photos.corporateBrandActivation,
-              alt: "The Curists van styled for a corporate client reception on a city terrace",
+              value: "brand-set",
+              label: "Branded sets",
+              text: "Build a photo-ready hospitality or product set around the van for launches, campaigns and branded content.",
+              caption: "A recognizable object with room for your brand.",
+              image: photos.tequilaBar,
+              alt: "The Curists van transformed into a tequila bar on the beach",
             },
             {
               number: "07",
-              value: "thematic-setups",
-              label: "Thematic setups",
-              text: "Flowers, food, signs, objects and partner details are selected around one clear emotional direction.",
-              caption: "A coherent world, not scattered decor.",
-              image: photos.weddingFlowersCandle,
-              alt: "Wedding flowers and candles arranged on a celebration table",
+              value: "private-setups",
+              label: "Private setups",
+              text: "Use the van as a grazing station, picnic anchor or intimate visual feature within a celebration organized by you or your planner.",
+              caption: "The vehicle becomes part of your chosen setting.",
+              image: photos.privateCelebrationLake,
+              alt: "The Curists van used as a grazing station beside a mountain lake",
             },
             {
               number: "08",
-              value: "team-building",
-              label: "Team building",
-              text: "Corporate experiences become more human through hospitality, shared tasks, taste and simple connection.",
-              caption: "Teams meeting through experience.",
-              image: photos.corporateTeamRitual,
-              alt: "A wellbeing experience with guests gathered around The Curists van",
+              value: "wellness",
+              label: "Wellness backdrop",
+              text: "Position the van as a juice bar, welcome point or visual anchor for a wellness session delivered by your own instructors and team.",
+              caption: "A calm focal point for your programme.",
+              image: photos.wellnessBeach,
+              alt: "The Curists van used as a juice bar beside a beach yoga session",
             },
           ],
         },
         {
-          title: "How we begin",
+          title: "What to include in your enquiry",
           text:
-            "You do not need to arrive with a fixed list. Tell us how you want people to feel, what practical services interest you and what the moment is for. We take care of the rest.",
+            "Share your preferred vehicle, date, location, working hours and intended use. For productions, include the shot list or visual direction if available. For ceremonies, let us know whether you need transport, a stationary backdrop or both.",
+          image: photos.plateau,
+          alt: "A close view of a Curists grazing platter",
         },
       ],
       cta: {
-        title: "Tell us what you want to feel.",
-        text: "We'll design the experience around the occasion, the people, the services and the memory you want to leave behind.",
+        title: "Need a classic vehicle for your next scene?",
+        text: "Send us the brief and we will confirm the right vehicle, availability, logistics and optional professional driver.",
         href: "/contact",
-        label: "Start Your Experience",
+        label: "Request Vehicle Availability",
       },
     },
-    "/weddingsandbaptisms": {
-      title: "Weddings & Baptisms",
-      kicker: "Ceremonies with feeling",
-      description: "Curated wedding and baptism experiences by The Curists.",
-      heroImage: photos.weddingKissBlueHour,
-      heroAlt: "A wedding couple kissing by the sea at blue hour",
+    "/photoshootsandvideoclips": {
+      title: "Photo Shoots & Video Clips",
+      kicker: "Classic vehicles for productions",
+      description: "Classic car and Volkswagen van hire for photo shoots, video clips, campaigns, commercials and social content.",
+      heroImage: photos.videoClip,
+      heroAlt: "The Curists mint Volkswagen T2 overlooking a rugged coastline at sunset",
       lede:
-        "Not just a ceremony. A feeling to remember. Weddings and baptisms should not simply be attended - they should be experienced.",
+        "Need the perfect subject or a striking backdrop? Rent a classic car or Volkswagen van for your photo shoot, video clip or branded production. Professional drivers are available on request.",
       panels: [
         {
           eyebrow: "01",
-          title: "A welcome that feels personal",
+          title: "Make the vehicle the hero",
           text:
-            "We design the first touchpoint around your story: drinks, flowers, signage, scent, music, mobile bar service and the small gestures that tell guests they have arrived somewhere meaningful.",
-          image: photos.baptismFamilyScooter,
-          alt: "A baptism family gathered around a decorated blue scooter",
+            "Build the visual story around a classic Mini or Volkswagen T2. Use it as the main subject for editorial photography, a music video, campaign imagery, social content or a commercial production.",
+          image: photos.videoClip,
+          alt: "The Curists mint Volkswagen T2 overlooking a rugged coastline at sunset",
         },
         {
           eyebrow: "02",
-          title: "A feeling to remember",
+          title: "Give the scene a point of view",
           text:
-            "The van can hold the in-between moments beautifully, from post-ceremony drinks and portraits to photobooth play, guest books, late-night espresso or a quiet space for a breath.",
-          image: photos.weddingHandsBouquet,
-          alt: "A wedding couple holding hands beside a pink and lavender bouquet",
+            "Place the vehicle in the background to add instant character, scale and colour. It can remain clean and minimal or become a photo-ready bar, tasting point, library or branded set.",
+          image: photos.videoClip,
+          alt: "The Curists mint Volkswagen T2 overlooking a rugged coastline at sunset",
+        },
+        {
+          eyebrow: "03",
+          title: "Move between locations",
+          text:
+            "When the production needs the vehicle on the road or across several locations, add a professional driver. Routes, access, working hours and movement are agreed before the booking.",
+          image: photos.videoClip,
+          alt: "The Curists mint Volkswagen T2 overlooking a rugged coastline at sunset",
         },
       ],
       sections: [
         {
-          title: "Proposed inclusions",
-          text: "Each plan is tailored, but these are the pieces couples and families often ask us to shape.",
-          items: ["Welcome drinks or signature serves", "Mobile bar", "Van styling", "Guest photobooth moment", "Vintage car touchpoint", "Baptism reception corner"],
+          title: "Made for the camera",
+          text:
+            "The vehicles work across polished productions and quick content days alike. Tell us the visual role they need to play and we will help you choose the most suitable option.",
+          items: [
+            "Editorial and fashion photo shoots",
+            "Music videos and artist content",
+            "Commercials and branded campaigns",
+            "Social media and creator productions",
+            "Product launches and hospitality sets",
+            "Wedding and baptism portraits",
+          ],
+          image: photos.videoClip,
+          alt: "The Curists mint Volkswagen T2 overlooking a rugged coastline at sunset",
         },
         {
-          title: "Best for",
-          text: "Civil weddings, destination weddings, baptisms, intimate ceremonies, wedding weekends and baptism receptions where the atmosphere matters as much as the schedule.",
+          title: "Your production stays yours",
+          text:
+            "The Curists provides the agreed vehicle and optional professional driver. Your team remains responsible for creative direction, photography or filming, crew, styling, locations, permits, insurance and production management unless something different is agreed in writing.",
+          image: photos.videoClip,
+          alt: "The Curists mint Volkswagen T2 overlooking a rugged coastline at sunset",
+        },
+        {
+          title: "What to send us",
+          text:
+            "Share the preferred vehicle, production date, location, working hours and intended use. A moodboard, shot list or location reference helps us confirm vehicle suitability and practical access.",
+          items: [
+            "Preferred classic car or van",
+            "Shoot date and working hours",
+            "Location and access conditions",
+            "Stationary shots or driving scenes",
+            "Professional driver required or not",
+            "Moodboard, shot list or campaign reference",
+          ],
+          image: photos.videoClip,
+          alt: "The Curists mint Volkswagen T2 overlooking a rugged coastline at sunset",
+        },
+      ],
+      related: [
+        { label: "All vehicle services", href: "/services" },
+        { label: "Weddings and baptisms", href: "/weddingsandbaptisms" },
+        { label: "Mobile van experiences", href: "/experiences#van" },
+      ],
+      cta: {
+        title: "Put a classic vehicle in your next frame.",
+        text: "Send us the production brief and we will confirm availability, logistics and professional driver options.",
+        href: "/contact",
+        label: "Request Vehicle Availability",
+      },
+    },
+    "/weddingsandbaptisms": {
+      title: "Weddings & Baptisms",
+      kicker: "Classic vehicles for ceremonies",
+      description: "Classic car and VW van hire for wedding and baptism arrivals, transport and portraits.",
+      heroImage: photos.baptismMiniChapel,
+      heroAlt: "A burgundy classic Mini prepared as a baptism photo backdrop by a seaside chapel",
+      lede:
+        "We provide distinctive classic vehicles for weddings and baptisms. We do not organize the ceremony or reception: your planner and suppliers remain in charge of the day.",
+      panels: [
+        {
+          eyebrow: "01",
+          title: "A memorable arrival",
+          text:
+            "Choose a classic Mini or Volkswagen T2 for transport, a ceremony entrance or a stationary feature. A professional driver can be added on request.",
+          image: photos.baptismMiniFront,
+          alt: "A burgundy classic Mini decorated for a baptism",
+        },
+        {
+          eyebrow: "02",
+          title: "A camera-ready backdrop",
+          text:
+            "Use the vehicle for couple, family and guest portraits before or after the ceremony. Styling and decorations can be installed by your own planner or decorator, subject to prior approval.",
+          image: photos.baptismBlueVan,
+          alt: "The mint Curists van decorated for a baptism portrait by the sea",
+        },
+      ],
+      sections: [
+        {
+          title: "What we provide",
+          text: "Every booking is agreed around the vehicle, location and schedule.",
+          items: ["Classic car or VW T2 hire", "Delivery and collection or agreed transport route", "Professional driver on request", "Agreed access for portraits and filming", "Vehicle guidance for your planner, stylist or production crew"],
+          image: photos.baptismMintVan,
+          alt: "The mint Curists van decorated in soft green and yellow balloons for a baptism",
+        },
+        {
+          title: "What remains with your team",
+          text: "The Curists is the vehicle provider, not the event organizer. Wedding or baptism planning, venue coordination, ceremony management, catering, floral design and decoration are arranged by you and your chosen professionals.",
+          image: photos.privateCelebrationNight,
+          alt: "A candlelit table inside The Curists van at night",
         },
       ],
       related: [
@@ -365,10 +470,10 @@
         { label: "Experiences", href: "/experiences" },
       ],
       cta: {
-        title: "Not just a wedding.",
-        text: "Tell us what you want to feel. We'll design the experience.",
+        title: "Choose the vehicle for your day.",
+        text: "Tell us the date, route, venue and how you would like to use the vehicle. We will confirm availability and driver options.",
         href: "/contact",
-        label: "Start Your Experience",
+        label: "Request Vehicle Availability",
       },
     },
     "/corporateevents": {
@@ -644,24 +749,24 @@
       },
     },
     "/contact": {
-      title: "Start your Experience",
-      kicker: "Start Your Experience",
-      description: "Start your Experience The Curists to start an event or experience brief.",
-      heroImage: photos.weddingStartYourJourney,
-      heroAlt: "A boarding pass style invitation card on textured fabric",
+      title: "Request a Vehicle",
+      kicker: "Check availability",
+      description: "Request classic car or VW van availability for a photo shoot, video clip, wedding, baptism or mobile experience.",
+      heroImage: photos.justMarriedVan,
+      heroAlt: "The Curists van staged as a cinematic bar above the sea at sunset",
       layout: "contact",
       lede:
-        "You do not tell us only what you need. You tell us how you want to feel. We take care of the rest.",
+        "Tell us which vehicle you need, when, where and how it will be used. We will reply with availability, logistics and professional driver options.",
       sections: [
         {
           title: "Helpful details",
-          text: "Share what you already know. Leave the rest open.",
-          items: ["Occasion and date", "Location or region", "Estimated guests", "Mood or feeling", "Services you are curious about", "Partners or media needs"],
+          text: "A few practical details help us confirm the right booking.",
+          items: ["Photo shoot, video clip or occasion", "Date and working hours", "Location and access", "Preferred vehicle", "Stationary use or transport route", "Professional driver required or not"],
         },
       ],
       cta: {
-        title: "Tell us what you want to feel.<br>We'll design the experience.",
-        text: "Send a note directly and we will respond with a clear next step.",
+        title: "Put the right vehicle in the frame.",
+        text: "Send the brief directly and we will respond with a clear next step.",
         href: "mailto:hello@thecurists.com",
         label: "hello@thecurists.com",
       },
@@ -734,20 +839,20 @@
 
   const curistsMedia = [
     {
-      src: photos.weddingTableSeasideDusk,
-      alt: "A private celebration table set beside the sea at sunset",
+      src: photos.onTheBeach,
+      alt: "The Curists mint Volkswagen van on a quiet beach at sunset",
     },
     {
-      src: photos.weddingKissBlueHour,
-      alt: "A wedding couple kissing by the sea at blue hour",
+      src: photos.baptismMiniChapel,
+      alt: "A burgundy classic Mini prepared as a baptism photo backdrop by a seaside chapel",
     },
     {
-      src: photos.baptismFamilyScooter,
-      alt: "A baptism family gathered around a decorated blue scooter",
+      src: photos.wineBar,
+      alt: "The Curists van configured as a wine bar in a vineyard at sunset",
     },
     {
-      src: photos.weddingFoodCharcuterie,
-      alt: "A charcuterie tray arranged for a private celebration",
+      src: photos.libraryOnWheels,
+      alt: "The Curists van transformed into a warmly lit mobile library",
     },
     {
       src: photos.weddingFlowersCandle,
@@ -777,52 +882,52 @@
 
   const curistsMoments = [
     {
-      src: photos.weddingStartYourJourney,
-      alt: "A boarding pass style invitation card on textured fabric",
-      label: "Arrival",
-      caption: "A welcome that sets the tone.",
+      src: photos.onTheBeach,
+      alt: "The Curists mint Volkswagen van on a quiet beach at sunset",
+      label: "Location",
+      caption: "A quiet road becomes the whole scene.",
     },
     {
-      src: photos.weddingTableBeach,
-      alt: "A beachside dinner table set with glassware and white linens",
-      label: "Setting",
-      caption: "Tables that make people slow down.",
-    },
-    {
-      src: photos.weddingHandsBouquet,
-      alt: "A wedding couple holding hands beside a pink and lavender bouquet",
+      src: photos.baptismMiniChapel,
+      alt: "A burgundy classic Mini prepared as a baptism photo backdrop by a seaside chapel",
       label: "Ceremony",
-      caption: "Details close enough to feel.",
+      caption: "A classic arrival, planned by your team.",
     },
     {
-      src: photos.baptismCeremonyVows,
-      alt: "A baptism table with a book, flowers and ceremonial objects",
-      label: "Ritual",
-      caption: "Quiet signatures with meaning.",
+      src: photos.wineBar,
+      alt: "The Curists van configured as a wine bar in a vineyard at sunset",
+      label: "Wine",
+      caption: "A mobile bar that belongs in the landscape.",
     },
     {
-      src: photos.weddingFoodVegetables,
-      alt: "A colorful vegetable platter prepared for a shared food experience",
-      label: "Taste",
-      caption: "Food as a generous first language.",
+      src: photos.libraryOnWheels,
+      alt: "The Curists van transformed into a warmly lit mobile library",
+      label: "Library",
+      caption: "A new story, built around the van.",
     },
     {
-      src: photos.weddingJustMarriedCheese,
-      alt: "A tiered cheese display with a Just Married topper",
-      label: "Play",
-      caption: "Humor and theatre in small things.",
+      src: photos.privateCelebrationLake,
+      alt: "The Curists van used as a grazing station beside a mountain lake",
+      label: "Gathering",
+      caption: "The vehicle becomes a place to meet.",
     },
     {
-      src: photos.weddingSignHands,
-      alt: "Hands holding playful just married signs",
-      label: "Keepsakes",
-      caption: "Objects that keep the feeling alive.",
+      src: photos.tequilaBar,
+      alt: "The Curists van transformed into a tequila bar on the beach",
+      label: "Activation",
+      caption: "A branded set with a clear point of view.",
     },
     {
-      src: photos.akisAnnaDance,
-      alt: "A wedding couple dancing under warm evening lights",
-      label: "Feeling",
-      caption: "The moment people remember first.",
+      src: photos.justMarriedVan,
+      alt: "The Curists van staged as a cinematic bar above the sea at sunset",
+      label: "Production",
+      caption: "Ready to become the hero of the frame.",
+    },
+    {
+      src: photos.wellnessBeach,
+      alt: "The Curists van used as a juice bar beside a beach yoga session",
+      label: "Wellness",
+      caption: "A calm visual anchor for your programme.",
     },
   ];
 
@@ -1082,8 +1187,8 @@
       titleInner.insertAdjacentHTML(
         "beforeend",
         `
-          <p class="curists-hero-copy">Curated weddings, baptisms, corporate and private experiences - designed not only to be seen, but to be felt.</p>
-          <a class="curists-hero-cta" href="/contact">Start Your Experience</a>
+          <p class="curists-hero-copy">Classic cars and vans for photo shoots, video clips, ceremonies and mobile experiences. Professional drivers available on request.</p>
+          <a class="curists-hero-cta" href="/contact">Check Vehicle Availability</a>
         `,
       );
     }
@@ -1282,10 +1387,10 @@
         </span>
       </label>
       <label>
-        <span>What should it feel like?</span>
-        <textarea name="brief" rows="6"></textarea>
+        <span>Tell us about the vehicle brief</span>
+        <textarea name="brief" rows="6" placeholder="Preferred vehicle, date, location, working hours and intended use"></textarea>
       </label>
-      <button type="submit">Send brief</button>
+      <button type="submit">Request availability</button>
     </form>
   `;
 
@@ -1485,6 +1590,77 @@
       card.addEventListener("pointerleave", reset);
       card.addEventListener("focusin", activate);
       card.addEventListener("focusout", reset);
+    });
+  };
+
+  const installExperienceShowcase = () => {
+    qsa("[data-curists-experience-showcase]").forEach((section) => {
+      if (section.dataset.curistsExperienceReady) return;
+      section.dataset.curistsExperienceReady = "true";
+
+      const buttons = qsa("[data-curists-experience-option]", section);
+      const visuals = qsa("[data-curists-experience-visual]", section);
+      const label = qs("[data-curists-experience-label]", section);
+      const title = qs("[data-curists-experience-title]", section);
+      const copy = qs("[data-curists-experience-copy]", section);
+      const link = qs("[data-curists-experience-link]", section);
+      const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+
+      const setActive = (button) => {
+        if (!button) return;
+        const experience = button.dataset.experience;
+
+        buttons.forEach((item) => {
+          const isActive = item === button;
+          item.classList.toggle("is-active", isActive);
+          item.setAttribute("aria-pressed", String(isActive));
+        });
+
+        visuals.forEach((visual) => {
+          const isActive = visual.dataset.experience === experience;
+          visual.classList.toggle("is-active", isActive);
+          visual.setAttribute("aria-hidden", String(!isActive));
+        });
+
+        if (label) label.textContent = experience || "Experience";
+        if (title) title.textContent = button.dataset.title || "";
+        if (copy) copy.textContent = button.dataset.copy || "";
+        if (link) {
+          const href = button.dataset.href || "/experiences";
+          link.href = href;
+          link.textContent = href === "/contact" ? "Start your brief" : "Explore this experience";
+        }
+      };
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => setActive(button));
+        button.addEventListener("focus", () => setActive(button));
+        button.addEventListener("pointerenter", (event) => {
+          if (event.pointerType === "mouse") setActive(button);
+        });
+      });
+
+      if (!reducedMotion) {
+        section.addEventListener("pointermove", (event) => {
+          const rect = section.getBoundingClientRect();
+          if (!rect.width || !rect.height) return;
+          const x = (event.clientX - rect.left) / rect.width - 0.5;
+          const y = (event.clientY - rect.top) / rect.height - 0.5;
+          section.style.setProperty("--experience-x", `${event.clientX - rect.left}px`);
+          section.style.setProperty("--experience-y", `${event.clientY - rect.top}px`);
+          section.style.setProperty("--experience-shift-x", `${(x * 8).toFixed(2)}px`);
+          section.style.setProperty("--experience-shift-y", `${(y * 6).toFixed(2)}px`);
+        });
+
+        section.addEventListener("pointerleave", () => {
+          section.style.removeProperty("--experience-x");
+          section.style.removeProperty("--experience-y");
+          section.style.removeProperty("--experience-shift-x");
+          section.style.removeProperty("--experience-shift-y");
+        });
+      }
+
+      setActive(buttons.find((button) => button.classList.contains("is-active")) || buttons[0]);
     });
   };
 
@@ -1802,14 +1978,14 @@
       <section class="curists-journey-section" data-curists-journey>
         <div class="curists-section-inner curists-journey-grid">
           <div class="curists-journey-copy">
-            <p class="curists-kicker">Start Your Experience</p>
-            <h2>Moments fade.<br>What we feel stays.</h2>
+            <p class="curists-kicker">Book a Curists vehicle</p>
+            <h2>Your story.<br>Our classic vehicle.</h2>
             <p>
-              The Curists began with a simple belief: experience reconnects us
-              to ourselves, to others and to the beauty of the present moment.
+              From a cinematic photo shoot to a ceremony arrival, we put a distinctive
+              classic car or van exactly where your story needs it.
             </p>
             <p class="curists-journey-note" data-curists-journey-note aria-live="polite">${journeySteps[0].note}</p>
-            <a class="curists-cta-button" href="/contact?stage=${journeySteps[0].value}" data-curists-journey-link data-base-href="/contact">Start Your Experience</a>
+            <a class="curists-cta-button" href="/contact?stage=${journeySteps[0].value}" data-curists-journey-link data-base-href="/contact">Request Availability</a>
           </div>
           <div class="curists-journey-console">
             <figure class="curists-journey-visual">
@@ -1850,18 +2026,18 @@
       <section class="curists-intro-section">
         <div class="curists-section-inner curists-intro-grid">
           <div>
-            <p class="curists-kicker">Taste / People / Feeling</p>
-            <h2>A tourist sees.<br>A Curist feels.</h2>
+            <p class="curists-kicker">Vehicle first / Your team in charge</p>
+            <h2>We bring the car.<br>You create the occasion.</h2>
             <p>
-              A tourist passes through moments. A Curist lives them. Whether you are
-              planning a wedding, baptism, corporate event or personal celebration,
-              we curate experiences with soul, beauty, service and intention.
+              The Curists supplies classic vehicles for productions, weddings, baptisms
+              and privately organized experiences. We do not plan ceremonies or receptions;
+              we work alongside your planner, stylist and production team.
             </p>
-            <a class="curists-cta-button" href="/contact">Start Your Experience</a>
+            <a class="curists-cta-button" href="/services">Explore Vehicle Services</a>
           </div>
           <div class="curists-photo-grid" aria-label="Curists moments">
-            <img src="${photos.baptismCandleFamily}" alt="Children and family blowing out a baptism candle" loading="lazy" decoding="async" />
-            <img src="${photos.weddingMiniCooper}" alt="A red vintage car decorated with white wedding flowers" loading="lazy" decoding="async" />
+            <img src="${photos.baptismBlueVan}" alt="The mint Curists van decorated for a baptism portrait by the sea" loading="lazy" decoding="async" />
+            <img src="${photos.baptismMiniFront}" alt="A burgundy classic Mini decorated for a baptism" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -1869,19 +2045,72 @@
       <section class="curists-feature-section">
         <div class="curists-section-inner">
           <p class="curists-kicker">Our Services</p>
-          <h2>Curated experiences, supported by complete event services.</h2>
+          <h2>Classic vehicles for the frame, the journey and the moment.</h2>
           <div class="curists-card-grid">
             ${services.map((item) => buildCard(item)).join("")}
           </div>
         </div>
       </section>
 
-      <section class="curists-feature-section curists-feature-section-dark">
+      <section class="curists-feature-section curists-feature-section-dark curists-experience-section" data-curists-experience-showcase>
         <div class="curists-section-inner">
-          <p class="curists-kicker">Curists Experiences</p>
-          <h2>Not a van. A curated experience in motion.</h2>
-          <div class="curists-card-grid">
-            ${experiences.map((item) => buildCard(item, "experience")).join("")}
+          <div class="curists-experience-heading">
+            <p class="curists-kicker">Curists Experiences</p>
+            <h2>Not a van. A curated experience in motion.</h2>
+            <p>Choose a format to see how the same classic vehicle can shift its purpose, mood and point of view.</p>
+          </div>
+          <div class="curists-experience-showcase">
+            <div class="curists-experience-stage" aria-label="Selected Curists experience">
+              ${experiences
+                .map(
+                  (item, index) => `
+                    <figure
+                      class="curists-experience-visual${index === 0 ? " is-active" : ""}"
+                      data-curists-experience-visual
+                      data-experience="${attrValue(item.label)}"
+                      aria-hidden="${index === 0 ? "false" : "true"}"
+                    >
+                      <img src="${item.image}" alt="${attrValue(item.alt)}" loading="lazy" decoding="async" />
+                      <figcaption>
+                        <span>${item.number} / ${item.label}</span>
+                        <strong>${item.title}</strong>
+                      </figcaption>
+                    </figure>
+                  `,
+                )
+                .join("")}
+            </div>
+            <div class="curists-experience-console">
+              <p class="curists-kicker">Choose a format</p>
+              <div class="curists-experience-options" role="group" aria-label="Curists experience formats">
+                ${experiences
+                  .map(
+                    (item, index) => `
+                      <button
+                        class="curists-experience-option${index === 0 ? " is-active" : ""}"
+                        type="button"
+                        aria-pressed="${index === 0 ? "true" : "false"}"
+                        data-curists-experience-option
+                        data-experience="${attrValue(item.label)}"
+                        data-title="${attrValue(item.title)}"
+                        data-copy="${attrValue(item.text)}"
+                        data-href="${attrValue(item.href)}"
+                      >
+                        <span>${item.number}</span>
+                        <strong>${item.title}</strong>
+                        <small>${item.label}</small>
+                      </button>
+                    `,
+                  )
+                  .join("")}
+              </div>
+              <div class="curists-experience-response" aria-live="polite">
+                <span data-curists-experience-label>${experiences[0].label}</span>
+                <h3 data-curists-experience-title>${experiences[0].title}</h3>
+                <p data-curists-experience-copy>${experiences[0].text}</p>
+                <a class="curists-cta-button" href="${experiences[0].href}" data-curists-experience-link>Explore this experience</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1890,7 +2119,7 @@
         <div class="curists-section-inner">
           <div class="curists-moments-heading">
             <p class="curists-kicker">Curists moments</p>
-            <h2>Designed to be felt, not just seen.</h2>
+            <h2>One vehicle. Many possible scenes.</h2>
           </div>
           <div class="curists-moments-grid">
             ${curistsMoments
@@ -2367,7 +2596,7 @@
     document.title = page ? `${page.title} - The Curists` : "The Curists - Experience is the Cure";
     const description = qs('meta[name="description"]');
     if (description) {
-      description.content = page?.description || "The Curists curates emotional experiences and event services for weddings, baptisms, corporate events, private celebrations, wellbeing moments and the Curist Van.";
+      description.content = page?.description || "The Curists provides classic cars and Volkswagen vans for photo shoots, video clips, weddings, baptisms and mobile experiences, with professional drivers available on request.";
     }
     const appTitle = qs('meta[name="apple-mobile-web-app-title"]');
     if (appTitle) appTitle.content = "The Curists";
@@ -2399,6 +2628,7 @@
     installReplacementSections();
     installJourneyInteractions();
     installServiceCardHoverEffects();
+    installExperienceShowcase();
     installMomentDissolve();
     updateIntroBlock();
     updateSchedule();
